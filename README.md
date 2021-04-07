@@ -10,7 +10,12 @@ After downloading, rename folder to 'RobustRotaryEncoder' and install in Arduino
 
 ### First Method
 
-t.b.d.
+Add these lib dependency line to your platformio.ini
+
+```ini
+lib_deps =
+    https://github.com/Jorgen-VikingGod/RobustRotaryEncoder.git
+```
 
 ### Second Method
 
