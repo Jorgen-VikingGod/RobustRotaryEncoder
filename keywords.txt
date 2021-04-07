@@ -1,0 +1,24 @@
+#######################################
+# Syntax Coloring Map For RobustRotaryEncoder
+#######################################
+# Class
+#######################################
+
+RobustRotaryEncoder	KEYWORD1
+
+#######################################
+# Methods and Functions
+#######################################	
+
+begin			KEYWORD2
+read			KEYWORD2
+incrementValue		KEYWORD2
+isChanged		KEYWORD2
+isCW			KEYWORD2
+isCCW			KEYWORD2
+
+#######################################
+# Constants
+#######################################
+
+
