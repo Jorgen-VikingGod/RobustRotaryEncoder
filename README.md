@@ -2,8 +2,6 @@
 
 Arduino library for robust reading of rotary encoders.
 
-After downloading, rename folder to 'RobustRotaryEncoder' and install in Arduino Libraries folder. Restart Arduino IDE, then open File->Sketchbook->Library->RobustRotaryEncoder->encoder sketch.
-
 ---
 
 ## Installation
@@ -59,8 +57,6 @@ void setup() {
 }
 
 void loop() {
-  encoderBtn.loop();
-  
   if (encoder.read()) {
     // rotary encoder down
     if (encoder.isCCW()) {
@@ -76,7 +72,7 @@ void loop() {
 
 ## Credits
 
-This library is written by Juergen Skrotzky, but main code of the robust reading is based on code of John Main (best-microcontroller-projects.com).
+This library is written by Juergen Skrotzky. Main code of the robust reading is based on code of John Main (best-microcontroller-projects.com).
 
 ## License
 
