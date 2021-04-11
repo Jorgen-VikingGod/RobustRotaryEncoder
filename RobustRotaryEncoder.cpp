@@ -66,7 +66,7 @@ void RobustRotaryEncoder::begin(uint8_t pinA, uint8_t pinB) {
   @brief   Read current encoder value.
   @return  encoder increment value. (1 = CW, -1 = CCW, 0 = invalid).
 */
-uint8_t RobustRotaryEncoder::read(void) {
+int RobustRotaryEncoder::read(void) {
   m_code <<= 2;
   if (digitalRead(m_pinA)) {
     m_code |= 0x02;
@@ -96,7 +96,7 @@ uint8_t RobustRotaryEncoder::read(void) {
   @brief   get current increment value.
   @return  encoder increment value. (1 = CW, -1 = CCW, 0 = invalid).
 */
-uint8_t RobustRotaryEncoder::incrementValue(void) {
+int RobustRotaryEncoder::incrementValue(void) {
   return m_val;
 }
 
